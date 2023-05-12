@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653B30692A0CD7DF0044C4B1 /* DragonCardGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653B30682A0CD7DF0044C4B1 /* DragonCardGraphView.swift */; };
 		6562925C2A078BD20062DE81 /* BetterSchoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562925B2A078BD20062DE81 /* BetterSchoolApp.swift */; };
 		6562925E2A078BD20062DE81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562925D2A078BD20062DE81 /* ContentView.swift */; };
 		656292602A078BD30062DE81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6562925F2A078BD30062DE81 /* Assets.xcassets */; };
@@ -14,6 +15,16 @@
 		6562926D2A078BD40062DE81 /* BetterSchoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562926C2A078BD40062DE81 /* BetterSchoolTests.swift */; };
 		656292772A078BD40062DE81 /* BetterSchoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656292762A078BD40062DE81 /* BetterSchoolUITests.swift */; };
 		656292792A078BD40062DE81 /* BetterSchoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656292782A078BD40062DE81 /* BetterSchoolUITestsLaunchTests.swift */; };
+		6562928E2A07B1120062DE81 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562928D2A07B1120062DE81 /* Student.swift */; };
+		65853D122A0C27AA006EE983 /* ClassCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65853D112A0C27AA006EE983 /* ClassCardView.swift */; };
+		65C39C562A07B791000FCD4E /* ProfileImage.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 65C39C552A07B791000FCD4E /* ProfileImage.JPG */; };
+		65C39C582A07BB99000FCD4E /* ClassCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C39C572A07BB99000FCD4E /* ClassCard.swift */; };
+		65C39C5A2A07BBBB000FCD4E /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C39C592A07BBBB000FCD4E /* Class.swift */; };
+		65F01ED42A07EA40007B105C /* LessonStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01ED32A07EA3F007B105C /* LessonStatus.swift */; };
+		65F01EDC2A0A441A007B105C /* BulletinCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01EDB2A0A441A007B105C /* BulletinCardView.swift */; };
+		65F01EDE2A0A44D4007B105C /* BulletinCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01EDD2A0A44D4007B105C /* BulletinCardType.swift */; };
+		65F01EE02A0A5C4B007B105C /* SummativeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01EDF2A0A5C4B007B105C /* SummativeListView.swift */; };
+		65F01EE22A0A6A1E007B105C /* SummativeEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F01EE12A0A6A1E007B105C /* SummativeEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		653B30682A0CD7DF0044C4B1 /* DragonCardGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonCardGraphView.swift; sourceTree = "<group>"; };
 		656292582A078BD20062DE81 /* BetterSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6562925B2A078BD20062DE81 /* BetterSchoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSchoolApp.swift; sourceTree = "<group>"; };
 		6562925D2A078BD20062DE81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +56,16 @@
 		656292722A078BD40062DE81 /* BetterSchoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterSchoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656292762A078BD40062DE81 /* BetterSchoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSchoolUITests.swift; sourceTree = "<group>"; };
 		656292782A078BD40062DE81 /* BetterSchoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSchoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6562928D2A07B1120062DE81 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		65853D112A0C27AA006EE983 /* ClassCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCardView.swift; sourceTree = "<group>"; };
+		65C39C552A07B791000FCD4E /* ProfileImage.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ProfileImage.JPG; path = ../../../Downloads/ProfileImage.JPG; sourceTree = "<group>"; };
+		65C39C572A07BB99000FCD4E /* ClassCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCard.swift; sourceTree = "<group>"; };
+		65C39C592A07BBBB000FCD4E /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		65F01ED32A07EA3F007B105C /* LessonStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonStatus.swift; sourceTree = "<group>"; };
+		65F01EDB2A0A441A007B105C /* BulletinCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinCardView.swift; sourceTree = "<group>"; };
+		65F01EDD2A0A44D4007B105C /* BulletinCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinCardType.swift; sourceTree = "<group>"; };
+		65F01EDF2A0A5C4B007B105C /* SummativeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummativeListView.swift; sourceTree = "<group>"; };
+		65F01EE12A0A6A1E007B105C /* SummativeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummativeEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +116,21 @@
 		6562925A2A078BD20062DE81 /* BetterSchool */ = {
 			isa = PBXGroup;
 			children = (
+				65C39C572A07BB99000FCD4E /* ClassCard.swift */,
+				65F01ED32A07EA3F007B105C /* LessonStatus.swift */,
+				65C39C592A07BBBB000FCD4E /* Class.swift */,
+				6562928D2A07B1120062DE81 /* Student.swift */,
 				6562925B2A078BD20062DE81 /* BetterSchoolApp.swift */,
 				6562925D2A078BD20062DE81 /* ContentView.swift */,
+				65853D112A0C27AA006EE983 /* ClassCardView.swift */,
+				653B30682A0CD7DF0044C4B1 /* DragonCardGraphView.swift */,
+				65C39C552A07B791000FCD4E /* ProfileImage.JPG */,
 				6562925F2A078BD30062DE81 /* Assets.xcassets */,
 				656292612A078BD30062DE81 /* Preview Content */,
+				65F01EDB2A0A441A007B105C /* BulletinCardView.swift */,
+				65F01EDD2A0A44D4007B105C /* BulletinCardType.swift */,
+				65F01EDF2A0A5C4B007B105C /* SummativeListView.swift */,
+				65F01EE12A0A6A1E007B105C /* SummativeEventView.swift */,
 			);
 			path = BetterSchool;
 			sourceTree = "<group>";
@@ -233,6 +266,7 @@
 			files = (
 				656292632A078BD30062DE81 /* Preview Assets.xcassets in Resources */,
 				656292602A078BD30062DE81 /* Assets.xcassets in Resources */,
+				65C39C562A07B791000FCD4E /* ProfileImage.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65853D122A0C27AA006EE983 /* ClassCardView.swift in Sources */,
 				6562925E2A078BD20062DE81 /* ContentView.swift in Sources */,
+				65F01EDE2A0A44D4007B105C /* BulletinCardType.swift in Sources */,
+				6562928E2A07B1120062DE81 /* Student.swift in Sources */,
+				65C39C582A07BB99000FCD4E /* ClassCard.swift in Sources */,
+				65F01EE22A0A6A1E007B105C /* SummativeEventView.swift in Sources */,
+				653B30692A0CD7DF0044C4B1 /* DragonCardGraphView.swift in Sources */,
+				65F01EE02A0A5C4B007B105C /* SummativeListView.swift in Sources */,
+				65C39C5A2A07BBBB000FCD4E /* Class.swift in Sources */,
+				65F01EDC2A0A441A007B105C /* BulletinCardView.swift in Sources */,
 				6562925C2A078BD20062DE81 /* BetterSchoolApp.swift in Sources */,
+				65F01ED42A07EA40007B105C /* LessonStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +463,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BetterSchool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BetterSchool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

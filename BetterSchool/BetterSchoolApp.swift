@@ -11,7 +11,7 @@ import SwiftUI
 struct BetterSchoolApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(Student: ExampleUser1,Class: ExampleClassArray )
         }
     }
 }
