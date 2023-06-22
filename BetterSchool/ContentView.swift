@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUICharts
 
 
 
@@ -21,117 +22,76 @@ struct DashboardView: View{
 
 
 struct DragonCardView: View{
+    @Namespace var namespace
+    @State var show = false
     var body: some View{
         NavigationStack{
             ScrollView{
                 VStack{
-                    Text("DragonCard").font(.largeTitle.bold())
-                    
-                  
-                   
-                    
-                }
-                .padding()
-                .frame(maxWidth: .infinity)
-            }.frame(maxWidth: .infinity)
-
-            .navigationBarTitleDisplayMode(.inline)
-                .toolbar{
-                    
-                    ToolbarItem{
-                        
-                        Button{
-                            
-                        } label: {
-                            HStack{
-                                Image(systemName: "creditcard")
-                                Text("Top-up").font(.caption)
-                            }.padding()
-                            
-                        }
-                       
-                        
-                    }
-                    
-                    ToolbarItem{
-                        Button {
-                            
-                        } label: {
-                            HStack{
-                                Text("Daniel Grbac Bravo").foregroundColor(.primary).font(.caption)
-                                Image("ProfileImage").resizable().scaledToFit().clipShape(Circle())
-                            }
-                            
-                            
-                           
-                        }
-                    }
-                    
-                    
-                    
-                    
-                    
-                   
-            }
-
-        }
-    }
-}
-
-struct ClassesView: View{
-    let ClassArray: Array<Class>
-    var body: some View{
-        NavigationStack{
-            ScrollView{
-                VStack{
-                    Text("Classes").font(.largeTitle.bold())
-                    
-                   
-                    ClassCardView(theclass: ClassArray[1])
-                     
-                    
-                    Divider().padding()
-                    
-                    ClassCardView(theclass: ClassArray[2])
-                       
-                    
-                    
-                }
+                    HStack{
+                        Text("Expenses")
+                            .font(.largeTitle.bold())
                 
-                .frame(maxWidth: .infinity)
-            }.frame(maxWidth: .infinity)
-
-            .navigationBarTitleDisplayMode(.inline)
-                .toolbar{
-                    
-                    ToolbarItem(placement: .navigationBarTrailing){
+                        
                         Button {
                             
                         } label: {
-                            HStack{
-                                Text("Daniel Grbac Bravo").foregroundColor(.primary).font(.caption)
-                                Image("ProfileImage").resizable().scaledToFit().clipShape(Circle())
-                            }
-                            
-                            
-                           
+                            Image("ProfileImage")
+                                .resizable()
+                                .scaledToFit()
+                                .mask(Circle())
                         }
-                    }
+                        .frame(width: 50,  alignment: .leading)
+                        .offset(x: 130)
+                        .padding()
+
+                    }  .frame(maxWidth: .infinity,  alignment: .topLeading)
+                        .padding()
+          
+                    
+                    
+                 
+                        LineChartView(data: [12, 25, 30, 15,22, 5,7,8,7,6,14,0], title: "Weekly Expenses", legend: "QAR", form: ChartForm.extraLarge)
+                            .padding()
+
+                            .matchedGeometryEffect(id: "ExpensesGraph", in: namespace)
                     
                     
                     
-                    
-                    
-                   
                 }
+              
+                .frame(maxWidth: .infinity)
+            }.frame(maxWidth: .infinity)
+            
+
+            
 
         }
+        
     }
 }
+
 
 struct ContentView: View {
+    
+    let previewData: [BulletinCardData] = [
+         BulletinCardData(title: "Congraulations to class of 2023 🥳", titleColor: Color.white , image: "example-photo-1", description: "This is a description of Card 1.", detailedMarkdownDescrition:
+                 """
+                 # Congratulations to the Class of 2023 at the American School of Doha
+                 ### A Proud Celebration
+                 Everyone at the [American School of Doha](https://asd.edu.qa/) takes great pride in our Class of 2023 for their achievements, character development, and community engagement despite all conundrum today。
+
+                 """
+                 ),
+         BulletinCardData(title: "Card 2",titleColor: Color.black ,  image: "example-photo-1", description: "This is a description of Card 2.", detailedMarkdownDescrition:
+   """
+   # Congratulations to the Class of 2023 at the American School of Doha
+   ## A Proud Celebration
+   Everyone at the [American School of Doha](https://asd.edu.qa/) takes great pride in our Class of 2023 for their achievements, character development, and community engagement despite all conundrum today。
+
+   """)]
     let Student: Student
-    let Class : Array<Class>
+    
     var body: some View {
         
        
@@ -144,7 +104,7 @@ struct ContentView: View {
             }
             
             
-            Text("Bulletin").tabItem{
+            BulletinView(data: previewData).tabItem{
                 Image(systemName: "list.bullet.clipboard")
                 Text("Bulletin")
             }
@@ -157,7 +117,7 @@ struct ContentView: View {
             }
             
             
-            ClassesView(ClassArray: ExampleClassArray).tabItem{
+           Text("Class Placeholder").tabItem{
                 Image(systemName: "graduationcap")
                 Text("Classes")
             }
@@ -173,6 +133,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(Student: ExampleUser1, Class: ExampleClassArray )
+        ContentView(Student: ExampleUser1 )
     }
 }
